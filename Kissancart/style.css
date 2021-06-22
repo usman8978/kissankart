@@ -1,0 +1,23 @@
+body{   
+    background: rgb(150, 184, 135);  
+}  
+#register{  
+    border: solid gray 1px;  
+    width:25%;  
+    border-radius: 102px;  
+    margin: 120px auto;  
+    background: rgb(173, 134, 134);  
+    padding: 50px;  
+   
+}  
+#btn{  
+    color: #fff;  
+    background: #337ab7;  
+    padding: 7px;  
+    margin-left: 50%;  
+}  
+#login{
+    color: rgb(12, 11, 11);  
+    padding: 7px;  
+    margin-left: 20%;
+}

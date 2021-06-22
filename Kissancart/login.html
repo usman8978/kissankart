@@ -1,0 +1,42 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <link rel="stylesheet" type="text/css" href="s.css">    
+     <style>
+body {
+  background-image: url('farm.jpg');
+
+  background-repeat: no-repeat;
+  background-size: 100%,90%;
+}
+</style> 
+</head>    
+<body>    
+<div class="logo"><img src="login.jpeg"></div>
+<br> 
+    <div class="login">    
+        <form id="login" method="post" action="login.php">  
+         <div class="All">   
+           
+            <label><b style="color:black">Mobile Number</b></label>    
+            <input type="text" name="Mobile"  placeholder="Enter Mobile Number">
+            <br><br><br>
+             <label><b style="color:black">Password</b></label>    
+            <input type="Password" name="Pass"  placeholder="Password">    
+            <br><br>
+            <input type="submit" name="Login" id="log" value="Login"> 
+            <input type="button" name="register" target="register.html" id="reg" value="Register">        
+            <br><br><br>   
+              
+            
+            </div> 
+        </form>     
+    </div>    
+    </body> 
+    <script type="text/javascript">
+        document.getElementById("reg").onclick = function () {
+            location.href = "register.html";
+        };
+    </script>   
+    </html>     

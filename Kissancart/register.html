@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>kissankart</title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">   
+    </head>
+    <body>
+        <div id="register">
+            <h1 id="login">REGISTRATION</h1>
+            <form name="f1" action="register.php" onsubmit="return validation()" method="post">
+               <p> <label>Name</label><br>
+                <input type="text" autocomplete="off" id="name" name="n"></p>
+                <p> <label>Mobile:</label><br>
+                <input type="text" autocomplete="off" id="mobile" name="m"></p>
+              <p><label>Password:</label>
+                <input type="password" id="passsword" name="p"></p>
+                <p><label>Verify Password:</label>
+                <input type="password" id="password2" name="password2"></p>
+              <p><input type="submit" id = "btn" name="register" value="REGISTER"></p>
+            </form>
+        </div>
+        <script>  
+            function validation()  
+            {  
+                var id=document.f1.n.value;  
+                var ps=document.f1.p.value; 
+                var ps2=document.f1.password2.value; 
+                var m=document.f1.m.value; 
+                if(id.length=="" && ps.length=="" &&m.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }
+                if(ps!=ps2)
+                {
+                    alert("verify password again")
+                }
+
+            }  
+        </script>  
+    </body>
+    
+</html>
